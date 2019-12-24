@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/soso_title"
+        style="@style/STextAppearance.Medium.Green1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/gap_medium"
+        android:layout_marginTop="@dimen/gap_large"
+        android:drawableLeft="@mipmap/pay_icn_success"
+        android:drawablePadding="@dimen/gap_micro"
+        android:gravity="center"
+        android:text="基地收货档案" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_1"
+        android:layout_marginTop="@dimen/gap_micro"
+        android:layout_marginLeft="@dimen/gap_medium"
+        android:layout_marginRight="@dimen/gap_medium"
+        android:background="#0CB338" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rev_soso_inner"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="84dp"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/standard_iv"
+            android:src="@mipmap/hege"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/gap_large"
+            android:scaleType="centerCrop"
+            android:layout_marginRight="@dimen/gap_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/company_iv"
+            android:src="@mipmap/icon_cm"
+            android:scaleType="centerCrop"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="@dimen/gap_small"
+            android:layout_marginLeft="@dimen/gap_medium"
+            android:layout_marginRight="@dimen/gap_medium"
+            android:layout_width="60dp"
+            android:layout_height="@dimen/view_60" />
+    </RelativeLayout>
+</LinearLayout>

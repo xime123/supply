@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="bd.com.supply">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:name=".app.BdApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/real_app_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/real_app_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data android:value="5d71aeca4ca357237b000337" android:name="UMENG_APPKEY"/>
+        <meta-data android:value="sct" android:name="UMENG_CHANNEL"/>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".module.start.SplashActivity"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="bd.com.supply.module.start.CreateOrImportActivity"/>
+        <activity android:name=".module.transaction.ui.QrcodeActivity" />
+        <activity android:name=".module.transaction.ui.ScanQrcodeActivity" />
+        <activity android:name=".module.transaction.ui.TxActivity" />
+        <activity android:name=".module.start.StartActivity" />
+        <activity android:name=".module.wallet.ui.CreateWalletActivity" />
+        <activity android:name=".module.wallet.ui.ImportWalletActivity" />
+        <activity android:name=".module.wallet.ui.WalletManagerActivity" />
+        <activity android:name=".module.wallet.ui.WalletDetailActivity" />
+        <activity android:name=".module.wallet.ui.ExportKeyStoreActivity" />
+        <activity android:name=".module.wallet.ui.ChangePasswordAcitivity" />
+        <activity android:name=".module.transaction.ui.TransactionDetailActivity" />
+        <activity android:name=".module.wallet.ui.TokenListActivity" />
+        <activity android:name=".module.transaction.ui.TokenSearchActivity" />
+        <activity android:name=".module.user.ui.SettingActivity" />
+        <activity android:name=".module.user.ui.AccountSecurityManageActivity" />
+        <activity android:name=".module.user.lockpattern.LockPatternCloseActivity" />
+        <activity android:name=".module.user.lockpattern.LockPatternResetActivity" />
+        <activity android:name=".module.user.lockpattern.LockPatternSetUpActivity" />
+        <activity android:name=".module.news.WebViewActivity" />
+        <activity android:name=".module.user.ui.ContactListActivity" />
+        <activity android:name=".module.user.ui.AddContactActivity" />
+        <activity android:name=".module.user.ui.EditContactActivity" />
+        <activity android:name=".module.test.TestActivity" />
+        <activity android:name=".module.user.ui.PublishTokenActivity" />
+        <activity android:name=".module.user.ui.ProtocolActivity" />
+        <activity android:name=".module.transaction.MaterialsActivity" />
+        <activity android:name=".module.transaction.ProductListActivity" />
+        <activity android:name=".module.transaction.BcInfoActivity" />
+        <activity android:name="bd.com.supply.module.transaction.PreviewPhotoActivity" />
+        <activity android:name="bd.com.supply.module.transaction.PackingProdActivity" />
+        <activity android:name="bd.com.supply.module.transaction.PackingActivity" />
+        <activity android:name="bd.com.supply.module.video.VideoPlayActivity" />
+        <activity android:name="bd.com.supply.module.transaction.BoxListActivity" />
+        <activity
+            android:name=".module.user.lockpattern.LockPatternUnlockActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".module.transaction.SoSoActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="bd.com.supply.module.transaction.NewSoSoActivity"
+            android:launchMode="singleTop" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <!-- Rich push 核心功能 since 2.0.6 -->
+        <activity
+            android:name="cn.jpush.android.ui.PopWinActivity"
+            android:exported="false"
+            android:theme="@style/MyDialogStyle" />
+
+        <!-- Required SDK核心功能 -->
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false"
+            android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="bd.com.supply" />
+            </intent-filter>
+        </activity>
+
+        <!-- Required SDK 核心功能 -->
+        <!-- since 3.0.9 Required SDK 核心功能 -->
+        <provider
+            android:name="cn.jpush.android.service.DataProvider"
+            android:authorities="bd.com.supply.DataProvider"
+            android:exported="false" />
+
+        <!-- since 1.8.0 option 可选项。用于同一设备中不同应用的JPush服务相互拉起的功能。 -->
+        <!-- 若不启用该功能可删除该组件，将不拉起其他应用也不能被其他应用拉起 -->
+        <service
+            android:name="cn.jpush.android.service.DaemonService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.DaemonService" />
+
+                <category android:name="bd.com.supply" />
+            </intent-filter>
+        </service>
+        <!-- since 3.1.0 Required SDK 核心功能 -->
+        <provider
+            android:name="cn.jpush.android.service.DownloadProvider"
+            android:authorities="bd.com.supply.DownloadProvider"
+            android:exported="true" />
+        <!-- Required SDK核心功能 -->
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter android:priority="1000">
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" /> <!-- Required  显示通知栏 -->
+                <category android:name="bd.com.supply" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <!-- Optional -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Required SDK核心功能 -->
+        <receiver
+            android:name="cn.jpush.android.service.AlarmReceiver"
+            android:exported="false" />
+
+        <!-- User defined.  For test only  用户自定义的广播接收器 -->
+        <receiver
+            android:name=".module.push.MyReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" /> <!-- Required  用户注册SDK的intent -->
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" /> <!-- Required  用户接收SDK消息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" /> <!-- Required  用户接收SDK通知栏信息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" /> <!-- Required  用户打开自定义通知栏的intent -->
+                <action android:name="cn.jpush.android.intent.CONNECTION" /> <!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <category android:name="bd.com.supply" />
+            </intent-filter>
+        </receiver>
+
+        <!-- User defined.  For test only  用户自定义接收消息器,3.0.7开始支持,目前新tag/alias接口设置结果会在该广播接收器对应的方法中回调 -->
+        <receiver android:name=".module.push.MyJPushMessageReceiver">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.RECEIVE_MESSAGE" />
+
+                <category android:name="bd.com.supply" />
+            </intent-filter>
+        </receiver>
+        <!-- Required  . Enable it you can get statistics data with channel -->
+        <meta-data
+            android:name="JPUSH_CHANNEL"
+            android:value="developer-default" />
+        <meta-data
+            android:name="JPUSH_APPKEY"
+            android:value="4de984b3d152360932a596bd" /> <!-- </>值来自开发者平台取得的AppKey -->
+        <activity android:name=".test.CoordinatorActivity" />
+        <activity android:name=".module.transaction.CategoryListActivity" />
+        <activity android:name=".module.transaction.AddProductInfoActivity" />
+        <activity android:name=".module.transaction.ui.NewTxHistoryActivity"></activity>
+        <activity android:name="bd.com.supply.module.transaction.PackingBoxActivity"></activity>
+    </application>
+
+</manifest>

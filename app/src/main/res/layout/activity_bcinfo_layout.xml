@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bc_info_bg">
+    <TextView
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/view_80"
+        android:layout_height="wrap_content"
+        style="@style/STextAppearance.Medium.White1"
+        android:text="产品区块链认证信息"/>
+    <RelativeLayout
+        android:layout_marginTop="120dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/view_40"
+        android:layout_marginRight="@dimen/view_40"
+        >
+
+        <ImageView
+            android:id="@+id/iv_bg"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/bc_content_bg" />
+
+        <LinearLayout
+            android:id="@+id/content_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/gap_medium"
+            android:layout_marginRight="@dimen/gap_medium"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/STextAppearance.Micro.White1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="@dimen/view_60"
+                android:text="所在链(Blockchain)" />
+
+            <TextView
+                android:id="@+id/bc_tv"
+                style="@style/STextAppearance.Small.White1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_50"
+                android:layout_marginTop="@dimen/gap_small"
+                android:background="@mipmap/bc_tv_bg"
+                android:gravity="center"
+                android:text="752168" />
+
+            <TextView
+                style="@style/STextAppearance.Micro.White1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/gap_small"
+                android:text="所在区块(Chain Height)" />
+
+            <TextView
+                android:id="@+id/ch_tv"
+                style="@style/STextAppearance.Small.White1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_50"
+                android:layout_marginTop="@dimen/gap_small"
+                android:background="@mipmap/bc_tv_bg"
+                android:gravity="center"
+                android:text="752168" />
+
+            <TextView
+                style="@style/STextAppearance.Micro.White1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/gap_small"
+                android:text="唯一编码(Unique Code)" />
+
+            <TextView
+                android:id="@+id/uuid_tv"
+                style="@style/STextAppearance.Small.White1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_50"
+                android:paddingLeft="@dimen/gap_small"
+                android:paddingRight="@dimen/gap_small"
+                android:layout_marginTop="@dimen/gap_small"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:background="@mipmap/bc_tv_bg"
+                android:gravity="center"
+                android:text="752168" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/sure_tv"
+            style="@style/STextAppearance.Small.White1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_50"
+            android:layout_below="@+id/iv_bg"
+            android:layout_marginTop="@dimen/gap_micro"
+            android:background="@mipmap/bc_tv_bg"
+            android:gravity="center"
+            android:text="确定" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

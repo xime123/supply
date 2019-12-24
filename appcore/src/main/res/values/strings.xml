@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">appCore</string>
+    <string name="min_10">10分钟</string>
+    <string name="min_30">30分钟</string>
+    <string name="one_hour">1小时</string>
+    <string name="six_hour">6小时</string>
+    <string name="one_day">1天</string>
+    <string name="three_day">3天</string>
+    <string name="seven_day">7天</string>
+    <string name="day_30">30天</string>
+    <string name="select_gesture_time">选择手势需要时间</string>
+    <string name="select_gesture_time_des">应用挂起一段时间后，启动需要验证手势密码</string>
+    <string name="select_online_time">选择在线有效时间</string>
+    <string name="select_online_time_des">应用超出在线有效期不登录应用，需重新输入密码登录</string>
+</resources>

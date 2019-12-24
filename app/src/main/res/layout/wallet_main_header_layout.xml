@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:customAttr="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:layout_marginBottom="@dimen/divider_1"
+    android:orientation="vertical"
+    app:ignore="NamespaceTypo">
+    <bd.com.supply.widget.marqueeview.MarqueeView
+        android:id="@+id/marqueeView"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:mvAnimDuration="1000"
+        android:visibility="gone"
+        android:background="@color/find_toulian_second"
+        app:mvDirection="bottom_to_top"
+        app:mvInterval="3000"
+        app:mvGravity="center"
+        app:mvTextColor="@color/white"
+        app:mvTextSize="14sp"
+        app:mvSingleLine="true"/>
+    <RelativeLayout
+        android:id="@+id/wallet_frag_ll_tap"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_margin="@dimen/gap_small"
+        android:background="@drawable/eye_bg"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/user_center_head_iv"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:scaleType="centerCrop"
+                android:layout_marginBottom="@dimen/gap_small"
+                android:layout_marginLeft="@dimen/gap_small"
+                android:layout_marginTop="@dimen/gap_small"
+                android:visibility="gone"
+                android:src="@mipmap/ic_launcher_round" />
+
+            <TextView
+                android:id="@+id/username_tv"
+                android:textSize="14dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/user_center_head_iv"
+                android:layout_marginLeft="@dimen/gap_small"
+                android:layout_toRightOf="@+id/user_center_head_iv"
+                android:gravity="center"
+                android:text="异次元"
+
+                android:textColor="@color/white" />
+
+
+            <TextView
+                android:id="@+id/address_tv"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/user_center_head_iv"
+                android:layout_marginLeft="@dimen/gap_small"
+                android:layout_toRightOf="@+id/user_center_head_iv"
+                android:ellipsize="middle"
+                android:textSize="14dp"
+                android:layout_below="@+id/username_tv"
+                android:singleLine="true"
+                android:text="fdgwejhjher43..sr2344"
+                android:textColor="#ffffffff" />
+
+            <TextView
+                android:id="@+id/chain_name_tv"
+                android:layout_width="200dp"
+                android:textSize="12dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/gap_small"
+                android:layout_toRightOf="@+id/user_center_head_iv"
+                android:ellipsize="middle"
+                android:visibility="gone"
+                android:singleLine="true"
+                android:text="dfsd"
+                android:textColor="#ffffffff" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/total_money_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/gap_small"
+            android:layout_marginRight="@dimen/gap_medium"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/gap_large"
+                android:text="¥"
+                android:textColor="#ffffffff"
+                android:textSize="9dp" />
+
+            <TextView
+                android:id="@+id/total_money_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/gap_small"
+                android:text="0.0"
+                android:textColor="#ffffffff"
+                android:textSize="21dp" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/gap_large"
+        android:layout_marginRight="@dimen/gap_medium">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="资产"
+            android:textColor="@color/s_text_color_black_1"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/add_fundation_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/gap_medium"
+            android:padding="@dimen/gap_small"
+            android:src="@mipmap/arrow_in" />
+    </RelativeLayout>
+
+
+</LinearLayout>

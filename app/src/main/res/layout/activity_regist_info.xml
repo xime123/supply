@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:layout_gravity="center_horizontal"
+              android:background="@drawable/register_bg"
+              tools:context="vec.com.vec.start.RegistInfoActivity">
+
+    <ImageView
+        android:layout_marginTop="172px"
+        android:layout_gravity="center_horizontal"
+        android:src="@mipmap/register_icon"
+        android:layout_height="226px"
+        android:layout_width='226px'
+        />
+
+    <EditText
+        android:id="@+id/name_et"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="40dp"
+        android:textSize="@dimen/font_small"
+        android:paddingLeft="@dimen/gap_medium"
+        android:background="@drawable/shape_btn_white"
+        android:hint="怎么称呼"
+        />
+
+    <EditText
+        android:id="@+id/pwd_et"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="@dimen/gap_medium"
+        android:textSize="@dimen/font_small"
+        android:paddingLeft="@dimen/gap_medium"
+        android:background="@drawable/shape_btn_white"
+        android:hint="输入密码"
+        />
+
+    <EditText
+        android:id="@+id/pwd_again_et"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="@dimen/gap_medium"
+        android:inputType="textPassword"
+        android:textSize="@dimen/font_small"
+        android:paddingLeft="@dimen/gap_medium"
+        android:background="@drawable/shape_btn_white"
+        android:hint="再次输入密码"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginRight="@dimen/gap_medium"
+        android:layout_marginLeft="@dimen/gap_medium"
+        android:layout_marginTop="@dimen/gap_gift_list"
+        android:textColor="@color/white"
+        android:text="确认"
+        android:textSize="16dp"
+        android:gravity="center"
+        android:onClick="sureInfo"
+        android:background="@drawable/text_btn_bg_yellow"
+        />
+</LinearLayout>

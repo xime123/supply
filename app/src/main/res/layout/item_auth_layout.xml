@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:paddingLeft="8dp"
+    android:paddingTop="8dp"
+    android:paddingRight="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/time_tv"
+            android:layout_toRightOf="@+id/prod_iv"
+            android:layout_marginTop="@dimen/gap_small"
+            style="@style/STextAppearance.Small.Black3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/gap_small"
+            android:layout_marginLeft="@dimen/gap_medium"
+            android:text="创建时间" />
+
+
+        <ImageView
+            android:id="@+id/add_auth_info_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/gap_medium"
+            android:src="@mipmap/add_foundation" />
+
+
+
+        <TextView
+            android:id="@+id/auth_address_tv"
+            android:layout_toRightOf="@+id/prod_iv"
+            android:layout_centerVertical="true"
+            style="@style/STextAppearance.Small.Black"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/gap_small"
+            android:layout_marginLeft="@dimen/gap_medium"
+            android:layout_marginRight="@dimen/gap_medium"
+            android:ellipsize="middle"
+            android:singleLine="true"
+            android:text="0xf234d3aeaf6e7f6ae5" />
+
+
+        <TextView
+            android:id="@+id/auth_name_tv"
+            android:layout_toRightOf="@+id/prod_iv"
+            style="@style/STextAppearance.Small.Black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/gap_medium"
+            android:layout_marginTop="@dimen/gap_micro"
+            android:layout_marginRight="@dimen/gap_medium"
+            android:ellipsize="middle"
+            android:singleLine="true"
+            android:text="啤酒"
+            />
+
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

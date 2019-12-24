@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/token_name_et"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_50"
+        android:layout_marginLeft="@dimen/gap_medium"
+        android:layout_marginRight="@dimen/gap_medium"
+        android:layout_marginTop="@dimen/gap_medium"
+        android:hint="代币名称"
+        android:textSize="14dp" />
+
+    <EditText
+        android:id="@+id/token_symbol_et"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_50"
+        android:layout_marginLeft="@dimen/gap_medium"
+        android:layout_marginRight="@dimen/gap_medium"
+        android:layout_marginTop="@dimen/gap_small"
+        android:hint="代币简称"
+        android:textSize="14dp" />
+
+    <EditText
+        android:id="@+id/token_init_mount_et"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_50"
+        android:layout_marginLeft="@dimen/gap_medium"
+        android:layout_marginRight="@dimen/gap_medium"
+        android:layout_marginTop="@dimen/gap_small"
+        android:inputType="number"
+        android:hint="代币总供应量"
+        android:textSize="14dp" />
+
+    <EditText
+        android:id="@+id/token_publisher_et"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_50"
+        android:layout_marginLeft="@dimen/gap_medium"
+        android:layout_marginRight="@dimen/gap_medium"
+        android:layout_marginTop="@dimen/gap_small"
+        android:hint="代币发行商"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/sure_tv"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="@dimen/gap_medium"
+        android:layout_marginRight="@dimen/gap_medium"
+        android:layout_marginTop="@dimen/gap_gift_list"
+        android:background="@drawable/register_bg"
+        android:gravity="center"
+        android:onClick="showDialog"
+        android:text="下一步"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+</LinearLayout>

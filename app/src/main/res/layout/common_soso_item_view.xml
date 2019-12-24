@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/soso_title"
+        style="@style/STextAppearance.Medium.Green1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/gap_medium"
+        android:layout_marginTop="@dimen/gap_medium"
+        android:drawableLeft="@mipmap/pay_icn_success"
+        android:drawablePadding="@dimen/gap_micro"
+        android:gravity="center"
+        android:text="基地收货档案" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_1"
+        android:layout_marginTop="@dimen/gap_micro"
+        android:background="#0CB338" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/gap_super_super_large"
+        android:layout_marginTop="@dimen/gap_medium">
+
+        <TextView
+            style="@style/STextAppearance.Large.Black1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="种植户:" />
+
+        <TextView
+            style="@style/STextAppearance.Large.Black3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="广东惠州基地" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/gap_super_super_large"
+        android:layout_marginTop="@dimen/gap_small">
+
+        <TextView
+            style="@style/STextAppearance.Large.Black1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="联系人:" />
+
+        <TextView
+            style="@style/STextAppearance.Large.Black3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="张*" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/gap_super_super_large"
+        android:layout_marginTop="@dimen/gap_small">
+
+        <TextView
+            style="@style/STextAppearance.Large.Black1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手机号:" />
+
+        <TextView
+            style="@style/STextAppearance.Large.Black3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="13922****78" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/cyan_normal" />
+
+        <bd.com.appcore.ui.view.CircleImageView
+
+            android:id="@+id/user_center_head_iv"
+            style="@style/SImageAppearance.Medium"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="55dp"
+            android:src="@mipmap/ic_launcher_round" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/gap_medium"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/value_tv"
+                    style="@style/STextAppearance.Large.Black1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="0.06"
+                    android:textSize="@dimen/view_25" />
+
+                <TextView
+                    android:id="@+id/unit_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="@dimen/gap_micro"
+                    android:layout_toRightOf="@+id/value_tv"
+                    android:gravity="bottom"
+                    android:text="ether"
+                    android:textColor="#ff999999"
+                    android:textSize="11dp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/gap_medium"
+                android:layout_marginTop="@dimen/gap_medium"
+                android:layout_marginRight="@dimen/gap_medium"
+                android:background="@color/divider" />
+
+            <TextView
+                style="@style/STextAppearance.Small.Black3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/gap_medium"
+                android:layout_marginTop="@dimen/gap_medium"
+                android:layout_toRightOf="@+id/value_tv"
+                android:text="发款方" />
+
+            <TextView
+                android:id="@+id/from_address_tv"
+                style="@style/STextAppearance.Small.Black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/gap_medium"
+                android:layout_marginTop="@dimen/gap_micro"
+                android:layout_marginRight="@dimen/gap_medium"
+                android:ellipsize="middle"
+                android:onClick="copyFromAddr"
+                android:singleLine="true"
+                android:text="0xf234d3aeaf6e7f6ae5" />
+
+            <TextView
+                style="@style/STextAppearance.Small.Black3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/gap_medium"
+                android:layout_marginTop="@dimen/gap_small"
+                android:layout_toRightOf="@+id/value_tv"
+                android:text="收款方" />
+
+            <TextView
+                android:id="@+id/to_address_tv"
+                style="@style/STextAppearance.Small.Black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/gap_medium"
+                android:layout_marginTop="@dimen/gap_micro"
+                android:layout_marginRight="@dimen/gap_medium"
+                android:ellipsize="middle"
+                android:onClick="copyToAddr"
+
+                android:text="0xf234d3aeaf6e7f6ae5" />
+
+            <TextView
+                style="@style/STextAppearance.Small.Black3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/gap_medium"
+                android:layout_marginTop="@dimen/gap_small"
+                android:layout_toRightOf="@+id/value_tv"
+                android:text="矿工费用" />
+
+            <TextView
+                android:id="@+id/gas_charge_tv"
+                style="@style/STextAppearance.Medium.Black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/gap_medium"
+                android:layout_marginTop="@dimen/gap_micro"
+                android:layout_marginRight="@dimen/gap_medium"
+                android:ellipsize="middle"
+                android:text="ether" />
+
+            <TextView
+                style="@style/STextAppearance.Small.Black3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/gap_medium"
+                android:layout_marginTop="@dimen/gap_medium"
+                android:layout_toRightOf="@+id/value_tv"
+                android:text="备注" />
+
+            <TextView
+                android:id="@+id/remark_tv"
+                style="@style/STextAppearance.Small.Black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/gap_medium"
+                android:layout_marginTop="@dimen/gap_small"
+                android:layout_marginRight="@dimen/gap_medium"
+                android:ellipsize="middle"
+                android:text="" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/gap_medium"
+                android:layout_marginTop="@dimen/gap_medium"
+                android:layout_marginRight="@dimen/gap_medium"
+                android:background="@color/divider" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/STextAppearance.Small.Black3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/gap_medium"
+                        android:layout_marginTop="@dimen/gap_small"
+                        android:layout_marginRight="@dimen/gap_medium"
+                        android:ellipsize="middle"
+                        android:text="交易号" />
+
+                    <TextView
+                        android:id="@+id/transaction_number_tv"
+                        style="@style/STextAppearance.Small.Black"
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/gap_medium"
+                        android:layout_marginTop="@dimen/gap_small"
+                        android:layout_marginRight="@dimen/gap_medium"
+
+                        android:ellipsize="middle"
+                        android:onClick="copyTxHash"
+                        android:singleLine="true"
+                        android:text="" />
+
+                    <TextView
+                        style="@style/STextAppearance.Small.Black3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/gap_medium"
+                        android:layout_marginTop="@dimen/gap_small"
+                        android:text="区块" />
+
+                    <TextView
+                        android:id="@+id/block_number_tv"
+                        style="@style/STextAppearance.Small.Black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/gap_medium"
+                        android:layout_marginTop="@dimen/gap_micro"
+                        android:layout_marginRight="@dimen/gap_medium"
+                        android:ellipsize="middle"
+                        android:text="" />
+
+                    <TextView
+                        style="@style/STextAppearance.Small.Black3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/gap_medium"
+                        android:layout_marginTop="@dimen/gap_small"
+                        android:text="交易时间" />
+
+                    <TextView
+                        android:id="@+id/time_tv"
+                        style="@style/STextAppearance.Small.Black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/gap_medium"
+                        android:layout_marginTop="@dimen/gap_micro"
+                        android:layout_marginBottom="@dimen/gap_medium"
+                        android:text="dfsf" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/qrcode_iv"
+                    android:layout_width="@dimen/view_160"
+                    android:layout_height="@dimen/view_160"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/gap_medium"
+                    android:src="@mipmap/qrcode" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/show_more_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/gap_super_super_large"
+                android:layout_marginRight="28dp"
+                android:text="到Etherscan查询更详细信息>"
+                android:textColor="@color/cyan_click" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

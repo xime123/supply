@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/materiasls_et"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_50"
+        android:layout_marginLeft="@dimen/gap_medium"
+        android:layout_marginRight="@dimen/gap_medium"
+        android:layout_marginTop="@dimen/gap_medium"
+        android:hint="原材料信息"
+        android:textSize="14dp" />
+
+    <EditText
+        android:id="@+id/technique_et"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_50"
+        android:layout_marginLeft="@dimen/gap_medium"
+        android:layout_marginRight="@dimen/gap_medium"
+        android:layout_marginTop="@dimen/gap_small"
+        android:hint="制作工艺"
+        android:textSize="14dp" />
+
+    <EditText
+        android:id="@+id/name_et"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_50"
+        android:layout_marginLeft="@dimen/gap_medium"
+        android:layout_marginRight="@dimen/gap_medium"
+        android:layout_marginTop="@dimen/gap_small"
+        android:hint="操作人员姓名"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/address_et"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_50"
+        android:layout_marginLeft="@dimen/gap_medium"
+        android:layout_marginRight="@dimen/gap_medium"
+        android:layout_marginTop="@dimen/gap_small"
+        android:hint="钱包地址"
+        android:visibility="gone"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/sure_tv"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="@dimen/gap_medium"
+        android:layout_marginRight="@dimen/gap_medium"
+        android:layout_marginTop="@dimen/gap_gift_list"
+        android:background="@drawable/register_bg"
+        android:gravity="center"
+        android:onClick="showDialog"
+        android:text="确定"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+</LinearLayout>

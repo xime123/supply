@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".module.wallet.ui.CreateWalletActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="@dimen/gap_medium"
+        android:lineSpacingExtra="@dimen/gap_micro"
+        android:background="@color/main_color_click"
+        android:textColor="@color/white_1"
+        android:textSize="@dimen/middle_text_size"
+        android:text="* 密码用于保护私钥和交易授权，强度非常重要\n* 超导钱包不存储密码，也无法帮您找回，请务必牢记\n"/>
+    <EditText
+        android:id="@+id/wallet_name_tv"
+        android:layout_marginTop="@dimen/gap_medium"
+        android:layout_marginLeft="@dimen/gap_medium"
+        android:layout_marginRight="@dimen/gap_medium"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_50"
+        android:hint="钱包名称"
+        android:textSize="@dimen/middle_text_size"/>
+    <EditText
+        android:id="@+id/password_edit_tv"
+        android:layout_marginTop="@dimen/gap_medium"
+        android:layout_marginLeft="@dimen/gap_medium"
+        android:layout_marginRight="@dimen/gap_medium"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_50"
+        android:inputType="textPassword"
+        android:hint="密码"
+        android:textSize="@dimen/middle_text_size"/>
+    <EditText
+        android:id="@+id/password_edit_again_tv"
+        android:layout_marginTop="@dimen/gap_medium"
+        android:layout_marginLeft="@dimen/gap_medium"
+        android:layout_marginRight="@dimen/gap_medium"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_50"
+        android:inputType="textPassword"
+        android:hint="确认密码"
+
+        android:textSize="@dimen/middle_text_size"/>
+    <TextView
+        android:id="@+id/import_file"
+        android:layout_marginTop="@dimen/gap_medium"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_40"
+        android:layout_marginRight="@dimen/gap_medium"
+        android:layout_marginLeft="@dimen/gap_medium"
+        android:background="@drawable/shape_btn_double_bule"
+        android:gravity="center"
+        android:text="创建钱包"
+        android:textSize="@dimen/larger_text_size"
+        android:onClick="createWallet"
+        android:textColor="@color/white_1" />
+    <TextView
+        android:id="@+id/import_wallet_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/gap_small"
+        style="@style/STextAppearance.Medium.Black2"
+        android:gravity="center"
+        android:padding="@dimen/gap_medium"
+        android:text="已有钱包，导入钱包"/>
+
+</LinearLayout>

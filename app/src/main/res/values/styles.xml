@@ -1,0 +1,376 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <!--通用的文本-->
+    <declare-styleable name="CommonItemView">
+        <attr name="isLeftIconShow" format="boolean" />
+        <attr name="showmTextRightIcon" format="boolean" />
+        <attr name="showValRightIcon" format="boolean" />
+        <attr name="text_right_src" format="reference" />
+        <attr name="LeftIcon" format="reference" />
+        <attr name="textDes" format="string" />
+        <attr name="textValue" format="string" />
+    </declare-styleable>
+
+    <style name="CommonItemStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">54dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@color/common_item_background</item>
+        <item name="android:layout_marginTop">@dimen/common_item_margin_top</item>
+    </style>
+    <style name="AppDialog" parent="AlertDialog.AppCompat">
+        <item name="android:windowBackground">@drawable/shape_white_radius</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.7</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+    <style name="AppDialog2" parent="AppDialog">
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="CommonItemIconStyle">
+        <item name="android:layout_width">@dimen/common_icon_size</item>
+        <item name="android:layout_height">@dimen/common_icon_size</item>
+        <item name="android:layout_marginLeft">@dimen/common_item_icon_margin_left</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <declare-styleable name="MaxHeightRecyclerView">
+        <attr name="maxHeight" format="dimension" />
+    </declare-styleable>
+
+    <style name="CommonItemDesTextStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/common_item_text_size</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textColor">@color/common_item_text_color</item>
+        <item name="android:layout_marginLeft">@dimen/common_des_margin_left</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="CommonItemValueTextStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_marginRight">@dimen/common_item_margin_right</item>
+        <item name="android:drawableRight">@mipmap/enter_into</item>
+        <item name="android:drawablePadding">@dimen/right_arrow_padding</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textSize">@dimen/common_item_val_text_size</item>
+        <item name="android:textColor">@color/common_item_val_text_color</item>
+    </style>
+
+    <style name="CommonItemRightImageViewStyle">
+        <item name="android:layout_width">@dimen/common_red_point_size</item>
+        <item name="android:layout_height">@dimen/common_red_point_size</item>
+        <item name="android:layout_marginRight">@dimen/common_item_margin_right</item>
+        <item name="android:layout_marginLeft">@dimen/common_item_icon_margin_left</item>
+        <item name="android:layout_centerVertical">true</item>
+
+    </style>
+
+    <style name="MineGroupTextStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/mine_group_height</item>
+        <item name="android:textSize">@dimen/mine_group_text_size</item>
+        <item name="android:textColor">@color/ts_group</item>
+        <item name="android:paddingLeft">@dimen/mine_des_margin_left</item>
+        <item name="android:gravity">bottom</item>
+        <item name="android:paddingBottom">@dimen/group_margin_bottom</item>
+    </style>
+
+    <style name="MineItemTextStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/mine_item_text_size</item>
+        <item name="android:textColor">@color/mine_item_text_color</item>
+        <item name="android:layout_marginLeft">@dimen/mine_des_margin_left</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="MineItemStyleWithLeftIcon" parent="MineItemTextStyle">
+        <item name="android:layout_marginLeft">@dimen/account_item_icon_margin_left</item>
+        <item name="android:drawablePadding">@dimen/mine_des_margin_left</item>
+        <item name="android:drawableLeft">@mipmap/ic_index_checked</item>
+
+    </style>
+
+    <style name="MineRightArrow">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginRight">@dimen/mine_item_margin_right</item>
+        <item name="android:drawableRight">@mipmap/enter_into</item>
+        <item name="android:drawablePadding">@dimen/right_arrow_padding</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="MineItemStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/items_height</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@color/mine_item_background</item>
+        <item name="android:layout_marginTop">@dimen/mine_item_margin_top</item>
+    </style>
+
+    <style name="MineIconStyle">
+        <item name="android:layout_width">@dimen/mine_icon_size</item>
+        <item name="android:layout_height">@dimen/mine_icon_size</item>
+        <item name="android:layout_marginLeft">@dimen/account_item_icon_margin_left</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="AppTheme.Base">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/cyan_normal</item>
+        <item name="colorPrimaryDark">@color/cyan_normal</item>
+        <item name="colorAccent">@color/cyan_normal</item>
+    </style>
+
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="HomeRadioButtonStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">10dp</item>
+        <item name="android:textColor">@color/home_bottom_button</item>
+        <item name="android:background">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:button">@null</item>
+    </style>
+
+    <style name="index_title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">@color/s_text_color_black_1</item>
+        <item name="android:background">@drawable/shape_title_bg</item>
+        <item name="android:drawableRight">@mipmap/enter_into</item>
+    </style>
+    <!--标题栏-->
+    <declare-styleable name="CommonActionBar">
+        <attr name="showBack" format="boolean" />
+        <attr name="showMenu1" format="boolean" />
+        <attr name="showMenu2" format="boolean" />
+        <attr name="backSrc" format="reference" />
+        <attr name="menu1Src" format="reference" />
+        <attr name="menu2Src" format="reference" />
+        <attr name="titleText" format="string" />
+    </declare-styleable>
+
+    <style name="SplashTheme" parent="AppTheme">
+        <item name="android:windowBackground">@drawable/splash_bg</item>
+    </style>
+    <!--圆形图片-->
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
+
+    <style name="Text_white_36">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black_1</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="Text_white_32">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black_1</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <dimen name="medium_head_width">80dp</dimen>
+    <dimen name="medium_head_height">80dp</dimen>
+
+
+    <style name="SImageAppearance"></style>
+
+    <style name="SImageAppearance.Medium">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+    </style>
+
+    <style name="STextAppearance"></style>
+
+    <style name="STextAppearance.Micro">
+        <item name="android:textSize">@dimen/s_text_size_micro</item>
+    </style>
+
+    <style name="STextAppearance.Small">
+        <item name="android:textSize">@dimen/s_text_size_small</item>
+    </style>
+
+    <style name="STextAppearance.Medium">
+        <item name="android:textSize">@dimen/s_text_size_medium</item>
+    </style>
+
+    <style name="STextAppearance.Large">
+        <item name="android:textSize">@dimen/s_text_size_large</item>
+    </style>
+    <!-- ———————————————————— 白色字体style ———————————————————— -->
+    <style name="STextAppearance.Micro.White1">
+        <item name="android:textColor">@color/s_text_color_white_1</item>
+    </style>
+
+    <style name="STextAppearance.Small.White1">
+        <item name="android:textColor">@color/s_text_color_white_1</item>
+    </style>
+
+    <style name="STextAppearance.Medium.White1">
+        <item name="android:textColor">@color/s_text_color_white_1</item>
+    </style>
+
+    <style name="STextAppearance.Large.White1">
+        <item name="android:textColor">@color/s_text_color_white_1</item>
+    </style>
+
+    <style name="STextAppearance.Large.Black1">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+
+    <style name="STextAppearance.Micro.Black2">
+        <item name="android:textColor">@color/s_text_color_black_2</item>
+    </style>
+
+    <style name="STextAppearance.Micro.Black3">
+        <item name="android:textColor">@color/s_text_color_black_3</item>
+    </style>
+
+    <style name="STextAppearance.Small.Black2">
+        <item name="android:textColor">@color/s_text_color_black_2</item>
+    </style>
+
+    <style name="STextAppearance.Small.Black3">
+        <item name="android:textColor">@color/s_text_color_black_3</item>
+    </style>
+
+    <style name="STextAppearance.Medium.Black2">
+        <item name="android:textColor">@color/s_text_color_black_2</item>
+    </style>
+
+    <style name="STextAppearance.Medium.Black3">
+        <item name="android:textColor">@color/s_text_color_black_3</item>
+    </style>
+
+    <style name="STextAppearance.Medium.Black">
+        <item name="android:textColor">@color/s_text_color_black</item>
+    </style>
+
+    <style name="STextAppearance.Micro.Black1">
+        <item name="android:textColor">@color/s_text_color_black_1</item>
+    </style>
+
+
+    <style name="STextAppearance.Small.Black">
+        <item name="android:textColor">@color/s_text_color_black</item>
+    </style>
+
+    <style name="STextAppearance.Large.Black3">
+        <item name="android:textColor">@color/s_text_color_black_3</item>
+    </style>
+
+    <style name="STextAppearance.Large.Black5">
+        <item name="android:textColor">@color/s_text_color_black_5</item>
+    </style>
+
+    <style name="STextAppearance.Medium.Black1">
+        <item name="android:textColor">@color/s_text_color_black_1</item>
+    </style>
+
+    <style name="STextAppearance.Small.Black1">
+        <item name="android:textColor">@color/s_text_color_black_1</item>
+    </style>
+
+    <style name="STextAppearance.Medium.Blue1">
+        <item name="android:textColor">@color/s_text_color_blue1</item>
+    </style>
+
+    <style name="STextAppearance.Medium.Green1">
+        <item name="android:textColor">#0CB338</item>
+    </style>
+
+    <style name="STextAppearance.Small.Red1">
+        <item name="android:textColor">@color/s_text_color_red_1</item>
+    </style>
+    <!--通用的文本-->
+    <declare-styleable name="CommonLineTextView">
+        <attr name="showLeft_top_line" format="boolean" />
+        <attr name="showLeft_bottom_line" format="boolean" />
+        <attr name="showLeft_icon" format="boolean" />
+        <attr name="showTextRightIcon" format="boolean" />
+        <attr name="showTextLine" format="boolean" />
+        <attr name="text_left_src" format="reference" />
+        <attr name="data_text" format="string" />
+        <attr name="title" format="string" />
+    </declare-styleable>
+
+    <style name="ActionSheetDialogStyle" parent="@android:style/Theme.Dialog">
+
+        <!-- 背景透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 浮于Activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- Dialog以外的区域模糊效果 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- Dialog进入及退出动画 -->
+        <item name="android:windowAnimationStyle">@style/ActionSheetDialogAnimation</item>
+    </style>
+    <!-- ActionSheet进出动画 -->
+    <style name="ActionSheetDialogAnimation" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/actionsheet_dialog_in</item>
+        <item name="android:windowExitAnimation">@anim/actionsheet_dialog_out</item>
+    </style>
+
+    <style name="MyDialogStyle">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="style_charging_btn">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:background">@drawable/selector_charging_main_btn</item>
+        <item name="android:stateListAnimator" tools:targetApi="lollipop">@null</item>
+        <item name="android:layout_marginLeft">24dp</item>
+        <item name="android:layout_marginRight">24dp</item>
+    </style>
+
+    <style name="TranslucentTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowTranslucentStatus" tools:targetApi="kitkat">false</item>
+        <item name="android:windowTranslucentNavigation" tools:targetApi="kitkat">true</item>
+        <!--Android 5.x开始需要把颜色设置透明，否则导航栏会呈现系统默认的浅灰色-->
+        <item name="android:statusBarColor" tools:targetApi="lollipop">@android:color/transparent
+        </item>
+    </style>
+</resources>

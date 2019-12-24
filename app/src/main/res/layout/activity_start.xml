@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/register_bg"
+    android:layout_gravity="center_horizontal"
+    >
+
+    <ImageView
+        android:layout_marginTop="172px"
+        android:layout_gravity="center_horizontal"
+        android:src="@mipmap/register_icon"
+        android:layout_height="226px"
+        android:layout_width='226px'
+        />
+
+    <TextView
+        android:id="@+id/import_tv"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/gap_gift_list"
+        android:layout_marginRight="@dimen/gap_gift_list"
+        android:layout_marginTop="@dimen/gap_large"
+        android:padding="@dimen/gap_medium"
+        android:background="@drawable/shape_btn_bule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:text="获取验证码"/>
+    <TextView
+        android:id="@+id/create_tv"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="@dimen/gap_medium"
+        android:layout_marginLeft="@dimen/gap_gift_list"
+        android:layout_marginRight="@dimen/gap_gift_list"
+        android:padding="@dimen/gap_medium"
+        android:background="@drawable/shape_btn_bule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:text="获取验证码"/>
+
+</LinearLayout>

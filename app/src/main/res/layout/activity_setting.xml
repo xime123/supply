@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <bd.com.appcore.ui.view.CommonLineTextView
+            android:id="@+id/config_chain_ctv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/gap_medium"
+            app:showLeft_icon="false"
+            app:showLeft_top_line="true"
+            app:title="配置链" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edit_text_height"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/gap_medium"
+            android:paddingRight="@dimen/gap_medium">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="开启日志"
+                android:textAppearance="@style/STextAppearance.Medium.Black1" />
+
+            <android.support.v4.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/log_switch_lockpattern"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/gap_small"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/line_view"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/gap_medium"
+            android:background="@color/color_divider" />
+
+        <bd.com.appcore.ui.view.CommonLineTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:showLeft_icon="false"
+            app:showLeft_top_line="true"
+            app:title="意见反馈" />
+        <bd.com.appcore.ui.view.CommonLineTextView
+            android:id="@+id/publish_token_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:showLeft_bottom_line="true"
+            app:text_left_src="@mipmap/personal_data"
+            app:title="一键发币" />
+
+        <bd.com.appcore.ui.view.CommonLineTextView
+            android:id="@+id/share_ctv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:showLeft_bottom_line="true"
+            app:text_left_src="@mipmap/personal_data"
+            app:title="一键分享" />
+
+        <bd.com.appcore.ui.view.CommonLineTextView
+            android:id="@+id/app_update_ctv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/gap_large"
+            app:showLeft_icon="false"
+            app:title="版本更新" />
+
+        <bd.com.appcore.ui.view.CommonLineTextView
+            android:id="@+id/clear_cache_ctv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:showLeft_icon="false"
+            app:title="清除缓存" />
+
+        <bd.com.appcore.ui.view.CommonLineTextView
+            android:id="@+id/protocol_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:showLeft_bottom_line="true"
+            app:showLeft_icon="false"
+            app:title="用户协议" />
+
+        <bd.com.appcore.ui.view.CommonLineTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:showLeft_bottom_line="true"
+            app:showLeft_icon="false"
+            app:title="关于我们" />
+
+        <TextView
+            android:id="@+id/logout_tv"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="@dimen/gap_medium"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="@dimen/gap_medium"
+            android:background="@drawable/shape_red_gray_bg_selector"
+            android:gravity="center"
+            android:text="退出"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</ScrollView>

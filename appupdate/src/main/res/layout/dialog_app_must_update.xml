@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="270dp"
+    android:layout_height="332dp"
+    android:layout_gravity="center"
+    android:background="@mipmap/bg_pop"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_common_dialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="45.5dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="9dp"
+        android:singleLine="true"
+        android:textColor="@color/color_black"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        tools:text="版本更新" />
+
+    <TextView
+        android:id="@+id/tv_common_dialog_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginBottom="17.5dp"
+        android:background="@drawable/dialog_version_bg"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:text="v1.1.4"
+        android:textColor="@color/color_white"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginBottom="32dp"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <TextView
+            android:id="@+id/tv_common_dialog_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingMultiplier="1.2"
+            android:paddingLeft="32dp"
+            android:paddingRight="@dimen/view_32"
+            android:scrollbars="vertical"
+            android:textColor="@color/color_black"
+            android:textSize="14sp"
+            tools:text="1.增加人脸识别功能；\n2.新增更多入口；\n3.UI界面进行优化" />
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/tv_common_dialog_right_btn"
+        android:layout_width="214dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@mipmap/btn_update_big"
+        android:scaleType="center" />
+
+    <LinearLayout
+        android:id="@+id/tv_common_dialog_controller"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="@dimen/gap_medium"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_common_dialog_tv_pro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/color_black"
+            android:textSize="12sp" />
+
+        <ProgressBar
+            android:id="@+id/tv_common_dialog_progress"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:layout_marginTop="8.5dp"
+            android:max="100"
+            android:progressDrawable="@drawable/myprogressbar" />
+
+    </LinearLayout>
+</LinearLayout>

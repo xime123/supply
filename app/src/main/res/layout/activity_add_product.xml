@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/opcontent_et"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_50"
+        android:layout_marginLeft="@dimen/gap_medium"
+        android:layout_marginRight="@dimen/gap_medium"
+        android:layout_marginTop="@dimen/gap_medium"
+        android:hint="操作内容"
+        android:textSize="14dp" />
+
+
+
+    <bd.com.appcore.ui.view.CommonLineTextView
+        android:id="@+id/select_ctv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/gap_medium"
+        android:layout_marginLeft="@dimen/gap_medium"
+        android:layout_marginRight="@dimen/gap_medium"
+        app:showLeft_icon="false"
+        app:showLeft_top_line="true"
+        app:title="选择产品周期" />
+
+    <TextView
+        android:id="@+id/sure_tv"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="@dimen/gap_medium"
+        android:layout_marginRight="@dimen/gap_medium"
+        android:layout_marginTop="@dimen/gap_gift_list"
+        android:background="@drawable/register_bg"
+        android:gravity="center"
+        android:onClick="showDialog"
+        android:text="确定"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+</LinearLayout>

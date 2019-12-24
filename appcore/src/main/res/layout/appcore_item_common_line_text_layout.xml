@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+
+                android:orientation="vertical"
+                android:background="@color/white"
+    android:layout_height="wrap_content">
+    <View
+        android:visibility="gone"
+        android:id="@+id/line_top"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/divider" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="@dimen/edit_text_height">
+
+        <TextView
+            android:id="@+id/tv_m_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/gap_medium"
+            android:text="融资阶段"
+            android:textAppearance="@style/STextAppearance.Medium.Black1" />
+
+        <TextView
+            android:id="@+id/tv_m_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/tv_m_name"
+            android:drawablePadding="@dimen/gap_micro"
+            android:drawableRight="@mipmap/enter_into"
+            android:gravity="right"
+            android:maxLines="1"
+            android:paddingRight="@dimen/gap_medium"
+            android:textAppearance="@style/STextAppearance.Small.Black3" />
+
+        <View
+            android:id="@+id/line_view"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+
+            android:layout_alignParentBottom="true"
+            android:background="@color/divider" />
+
+    </RelativeLayout>
+    <View
+        android:visibility="gone"
+        android:id="@+id/line_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/divider" />
+</LinearLayout>

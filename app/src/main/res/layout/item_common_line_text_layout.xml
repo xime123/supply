@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/CommonItemStyle">
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        style="@style/CommonItemIconStyle" />
+
+    <TextView
+        android:id="@+id/tv_des"
+        style="@style/CommonItemDesTextStyle"
+        android:layout_toRightOf="@id/iv_icon"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/tv_value"
+        style="@style/CommonItemValueTextStyle"
+        android:layout_marginLeft="@dimen/gap_small"
+        android:layout_toRightOf="@+id/tv_des"
+        android:gravity="right"
+        android:text="" />
+
+    <ImageView
+        android:id="@+id/iv_right_icon"
+        style="@style/CommonItemRightImageViewStyle"
+        android:layout_toRightOf="@+id/tv_des"
+        android:visibility="gone" />
+
+</RelativeLayout>

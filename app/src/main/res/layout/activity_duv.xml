@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/gap_medium">
+
+        <EditText
+            android:id="@+id/rev_address_ev"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_50"
+            android:layout_marginLeft="@dimen/gap_medium"
+            android:layout_marginRight="@dimen/gap_medium"
+            android:hint="收款人钱包地址"
+            android:textSize="12dp" />
+
+        <ImageView
+            android:id="@+id/contact_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/gap_medium"
+            android:padding="@dimen/gap_small"
+            android:src="@mipmap/contact_icon" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/coint_count_et"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_50"
+            android:layout_marginLeft="@dimen/gap_medium"
+            android:layout_marginTop="@dimen/gap_medium"
+            android:layout_marginRight="@dimen/gap_medium"
+            android:hint="转账"
+            android:inputType="numberDecimal"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/balance_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/gap_medium"
+            android:gravity="bottom"
+            android:paddingRight="4dp"
+            android:text="当前余额：0"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/remark_et"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_50"
+        android:layout_marginLeft="@dimen/gap_medium"
+        android:layout_marginTop="@dimen/gap_medium"
+        android:layout_marginRight="@dimen/gap_medium"
+        android:hint="备注"
+        android:textSize="12dp" />
+
+    <LinearLayout
+        android:id="@+id/seekBar_Rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/gap_medium"
+            android:layout_marginTop="@dimen/gap_large"
+            android:text="矿工费用"
+            android:textColor="#ffb9c3cc"
+            android:textSize="14dp" />
+
+        <SeekBar
+            android:id="@+id/seek_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/gap_medium"
+            android:layout_marginTop="@dimen/gap_medium"
+            android:layout_marginRight="@dimen/gap_medium"
+            android:max="35" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/gap_large"
+            android:layout_marginTop="@dimen/gap_medium"
+            android:layout_marginRight="@dimen/gap_large">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="慢"
+                android:textColor="#ffc1c6cc"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/gas_value_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="0.0001 ether"
+                android:textColor="#ffc1c6cc"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="快"
+                android:textColor="#ffc1c6cc"
+                android:textSize="14dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/sure_tv"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="@dimen/gap_medium"
+        android:layout_marginTop="@dimen/gap_gift_list"
+        android:layout_marginRight="@dimen/gap_medium"
+        android:background="@drawable/register_bg"
+        android:gravity="center"
+        android:onClick="showDialog"
+        android:text="下一步"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+</LinearLayout>

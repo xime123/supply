@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@mipmap/personal_center_bg"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/edit_text_height"
+            android:paddingTop="@dimen/gap_medium">
+
+            <bd.com.appcore.ui.view.CircleImageView
+
+                android:id="@+id/user_center_head_iv"
+                style="@style/SImageAppearance.Medium"
+                android:layout_marginTop="@dimen/gap_gift_list"
+                android:src="@mipmap/default_avatar_male" />
+
+            <TextView
+                android:id="@+id/username_tv"
+                style="@style/STextAppearance.Medium.White1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/gap_small"
+                android:gravity="center"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/account_tv"
+                style="@style/STextAppearance.Medium.White1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/gap_small"
+                android:gravity="center"
+                android:text="" />
+
+        </LinearLayout>
+
+        <bd.com.appcore.ui.view.CommonLineTextView
+            android:id="@+id/info_ctv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:showLeft_bottom_line="true"
+            app:text_left_src="@mipmap/personal_data"
+            app:title="钱包管理" />
+
+        <bd.com.appcore.ui.view.CommonLineTextView
+            android:id="@+id/account_ctv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:text_left_src="@mipmap/safety_management"
+            app:title="账号安全管理" />
+
+        <bd.com.appcore.ui.view.CommonLineTextView
+            android:id="@+id/help_ctv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:showLeft_bottom_line="true"
+            app:text_left_src="@mipmap/help_center"
+            app:title="帮组中心" />
+
+        <bd.com.appcore.ui.view.CommonLineTextView
+            android:id="@+id/setting_ctv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/gap_super_large"
+            app:showLeft_bottom_line="true"
+            app:showLeft_top_line="true"
+            app:text_left_src="@mipmap/set"
+            app:title="设置" />
+    </LinearLayout>
+</FrameLayout>

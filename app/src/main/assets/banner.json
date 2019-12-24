@@ -1,0 +1,30 @@
+{
+  "version": "1.0.1",
+    "list": [
+      {
+        "title":"如何申请海外Apple ID",
+        "des":"想使用海外版超导钱包？点这里。近日多名用户反馈希望能使用超导钱包",
+        "bgUrl":"https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=4256613289,2163937697&fm=26&gp=0.jpg",
+        "targetUrl":"https://news.token.im/detail/87?locale=zh-CN",
+        "time":"2小时前",
+        "id":"1"
+      },
+      {
+        "title":"数字货币ICO上币破发率高达95%，ICO只为圈钱？",
+        "des":"有分析师指出,随着货币贬值、通胀接近恶性水平(hyperinflation)、经常账户赤字高企、外债依赖度过高,越来越多的土耳其人可能会选择“拥抱”数字货币。 在美土关系急剧..",
+        "bgUrl":"https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=792034615,4195919917&fm=173&app=25&f=JPEG?w=640&h=356&s=A8D2EA075C532CD21CB4C49301009083",
+        "targetUrl":"https://baijiahao.baidu.com/s?id=1609575368457122790&wfr=spider&for=mobile",
+        "time":"8小时前",
+        "id":"1"
+
+      },
+      {
+        "title":"泰国央行宣布将基于R3 Tech技术开发数字货币",
+        "des":"据外媒报道,泰国银行(BoT)宣布,预计在2019年3月之前完成中央银行数字货币(CBDC)概念验证试验的第一阶段。当地时间周二,BoT在一份新闻稿中表示,它已经跟该国的8...",
+        "bgUrl":"https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1016732001,4005146173&fm=26&gp=0.jpg",
+        "targetUrl":"https://baijiahao.baidu.com/s?id=1609652148127898619&wfr=spider&for=mobile",
+        "time":"一天前",
+        "id":"1"
+      }
+   ]
+}

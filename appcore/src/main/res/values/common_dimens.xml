@@ -1,0 +1,21 @@
+<resources>
+    <dimen name="gap_microer">2dp</dimen>
+    <dimen name="gap_micro">4dp</dimen>
+    <dimen name="gap_small">8dp</dimen>
+    <dimen name="gap_smaller">12dp</dimen>
+    <dimen name="gap_medium">16dp</dimen>
+    <dimen name="gap_large">24dp</dimen>
+    <dimen name="gap_super_large">32dp</dimen>
+    <dimen name="gap_title">40dp</dimen>
+    <dimen name="gap_super_super_large">40dp</dimen>
+    <dimen name="gap_gift_list">56dp</dimen>
+    <!--带阴影的间距shadow view-->
+    <dimen name="sv_gap_micro">0dp</dimen>
+    <dimen name="sv_gap_small">4dp</dimen>
+    <dimen name="sv_gap_medium">12dp</dimen>
+    <dimen name="sv_gap_large">20dp</dimen>
+    <dimen name="sv_gap_super_large">28dp</dimen>
+    <!--图片的大小-->
+    <dimen name="icon_middle">72dp</dimen>
+    <dimen name="edit_text_height">50dp</dimen>
+</resources>

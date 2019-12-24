@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/gap_medium"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/news_item_iv"
+            android:layout_width="@dimen/view_60"
+            android:layout_height="@dimen/view_60"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_category_0" />
+
+        <TextView
+            android:id="@+id/wallet_name_tv"
+            style="@style/STextAppearance.Small.Black1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/gap_medium"
+            android:layout_toRightOf="@+id/news_item_iv"
+            android:gravity="top"
+            android:text="qqq" />
+
+        <TextView
+            android:id="@+id/wallet_address_tv"
+            style="@style/STextAppearance.Small.Black3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/wallet_name_tv"
+            android:layout_marginLeft="@dimen/gap_medium"
+            android:layout_toRightOf="@+id/news_item_iv"
+            android:ellipsize="middle"
+            android:singleLine="true"
+            android:visibility="gone"
+            android:text="qqq" />
+
+
+        <TextView
+            android:id="@+id/time_tv"
+            style="@style/STextAppearance.Micro.Black3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/gap_small"
+            android:layout_marginLeft="@dimen/gap_medium"
+            android:layout_alignBottom="@+id/news_item_iv"
+            android:layout_toRightOf="@+id/news_item_iv"
+            android:text="ether" />
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

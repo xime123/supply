@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/gap_medium"
+            android:layout_marginRight="@dimen/gap_medium"
+            android:layout_marginTop="@dimen/gap_super_super_large"
+            android:text="直接复制粘贴以太坊官方钱包keystore文件内容至输入框。或者通过生成keystore内容的二维码，扫描录入."
+            android:textColor="@color/black_2"
+            android:textSize="@dimen/gap_medium" />
+
+        <EditText
+            android:id="@+id/private_key_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/gap_medium"
+            android:layout_marginRight="@dimen/gap_medium"
+            android:layout_marginTop="@dimen/gap_large"
+            android:background="@android:drawable/alert_light_frame"
+            android:minHeight="@dimen/view_150" />
+
+        <EditText
+            android:id="@+id/pwd_pri_et"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_50"
+            android:layout_marginLeft="@dimen/gap_medium"
+            android:layout_marginRight="@dimen/gap_medium"
+            android:layout_marginTop="@dimen/gap_medium"
+            android:hint="密码"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/pwd_pri_again_et"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_50"
+            android:layout_marginLeft="@dimen/gap_medium"
+            android:layout_marginRight="@dimen/gap_medium"
+            android:layout_marginTop="@dimen/gap_medium"
+            android:hint="重复密码"
+            android:inputType="textPassword" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_50"
+                android:layout_marginLeft="@dimen/gap_medium"
+                android:layout_marginRight="@dimen/gap_medium"
+                android:layout_marginTop="@dimen/gap_medium"
+                android:hint="密码提示信息（可以填）"
+                android:inputType="textPassword" />
+        <TextView
+            android:id="@+id/import_privatekey_tv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_40"
+            android:layout_marginLeft="@dimen/gap_medium"
+            android:layout_marginRight="@dimen/gap_medium"
+            android:layout_marginTop="@dimen/gap_medium"
+            android:background="@drawable/shape_btn_double_bule"
+            android:gravity="center"
+
+            android:text="开始导入"
+            android:layout_marginBottom="@dimen/gap_super_super_large"
+            android:textColor="@color/white_1" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

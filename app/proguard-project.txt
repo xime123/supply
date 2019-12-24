@@ -1,0 +1,338 @@
+# To enable ProGuard in your project, edit project.properties
+# to define the proguard.config property as described in that file.
+#
+# Add project specific ProGuard rules here.
+# By default, the flags in this file are appended to flags specified
+# in ${sdk.dir}/tools/proguard/proguard-android.txt
+# You can edit the include path and order by changing the ProGuard
+# include property in project.properties.
+#
+# For more details, see
+#   http://developer.android.com/guide/developing/tools/proguard.html
+
+# Add any project specific keep options here:
+
+# If your project uses WebView with JS, uncomment the following
+# and specify the fully qualified class name to the JavaScript interface
+# class:
+#-keepclassmembers class fqcn.of.javascript.interface.for.webview {
+#   public *;
+#}
+
+-useuniqueclassmembernames
+-ignorewarnings
+-dontwarn org.htmlcleaner.**
+-optimizations !code/simplification/arithmetic,!field/*,!class/merging/*  
+  
+-keepattributes *Annotation*
+-keepattributes Signature
+#------------------第三方框架-------------------------------------#
+# smack xmpp
+-dontwarn org.jivesoftware.smack.**
+-keep class com.jcraft.**{*;}
+-keep class org.jivesoftware.**{*;}
+-keep class org.xmlpull.**{*;}
+-keep class org.**{*;}
+-keep class com.nostra13.universalimageloader.**{*;}
+-keep class com.app.netstatecontrol.**{*;}
+
+# EventBus
+-keepattributes *Annotation*
+-keepclassmembers class ** {
+    @org.greenrobot.eventbus.Subscribe <methods>;
+}
+
+-keepclassmembers class **{
+    public void onEvent*(**);
+}
+-keep enum org.greenrobot.eventbus.ThreadMode { *; }
+# Only required if you use AsyncExecutor
+-keepclassmembers class * extends org.greenrobot.eventbus.util.ThrowableFailureEvent {
+    <init>(Java.lang.Throwable);
+}
+
+# gson
+-keep public class com.google.gson.**
+-keep public class com.google.gson.** {public private protected *;}
+-keep class sun.misc.Unsafe { *; }
+-keepattributes Signature
+-keepattributes *Annotation*
+
+# bugly.qq.com
+-keep public class com.tencent.bugly.**{*;}
+
+# weixin pay
+-keep class com.tencent.mm.sdk.** {*;}
+
+# webapp
+-keep class com.yap.webapp.was.webruntime.JS2JavaProxy{public *;}
+
+# alipay
+-keep class com.alipay.android.app.IAlixPay{*;}
+-keep class com.alipay.android.app.IAlixPay$Stub{*;}
+-keep class com.alipay.android.app.IRemoteServiceCallback{*;}
+-keep class com.alipay.android.app.IRemoteServiceCallback$Stub{*;}
+-keep class com.alipay.sdk.app.PayTask{public *;}
+-keep class com.alipay.sdk.app.AuthTask{public *;}
+
+# BaiduApi
+-keep class com.baidu.** {*;}
+-keep class vi.com.** {*;}    
+-dontwarn com.baidu.**
+
+#XINGGE
+-keep public class * extends android.app.Service
+-keep public class * extends android.content.BroadcastReceiver
+-keep class com.tencent.android.tpush.**  {* ;}
+-keep class com.tencent.mid.**  {* ;}
+
+#umeng
+-keepclassmembers class * {
+   public <init> (org.json.JSONObject);
+}
+-keep class com.umeng.** {*;}
+
+-keepclassmembers class * {
+   public <init> (org.json.JSONObject);
+}
+
+-keepclassmembers enum * {
+    public static **[] values();
+    public static ** valueOf(java.lang.String);
+}
+-keep public class bd.com.supply.R$*{
+public static final int *;
+}
+# web3j
+-dontwarn com.org.web3j.**
+-keep class com.org.web3j.** { *;}
+
+#xrecyclerview
+-dontwarn com.jcodecraeer.xrecyclerview.**
+-keep class com.jcodecraeer.xrecyclerview.** { *;}
+
+#tablayout
+-dontwarn com.flyco.tablayout.**
+-keep class com.flyco.tablayout.**{*;}
+
+-keep public class com.pagoda.buy.R$*{
+   public static final int *;
+}
+
+-keepclassmembers class * {
+   public <init> (org.json.JSONObject);
+}
+#okhttp
+-dontwarn okhttp3.**
+-keep class okhttp3.**{*;}
+-keep interface okhttp3.**{*;}
+
+#okio
+-dontwarn okio.**
+-keep class okio.**{*;}
+-keep interface okio.**{*;}
+
+-dontwarn retrofit2.**
+-keep class retrofit2.** { *; }
+-keepattributes Signature
+-keepattributes Exceptions
+
+# rxjava
+-dontwarn rx.**
+-keep class rx.**{*;}
+-dontwarn sun.misc.**
+-keepclassmembers class rx.internal.util.unsafe.*ArrayQueue*Field* {
+ long producerIndex;
+ long consumerIndex;
+}
+-keepclassmembers class rx.internal.util.unsafe.BaseLinkedQueueProducerNodeRef {
+ rx.internal.util.atomic.LinkedQueueNode producerNode;
+}
+-keepclassmembers class rx.internal.util.unsafe.BaseLinkedQueueConsumerNodeRef {
+ rx.internal.util.atomic.LinkedQueueNode consumerNode;
+}
+
+#java 8 lamba表达式
+-dontwarn java.lang.invoke.*
+# webview
+-keepclassmembers class fqcn.of.javascript.interface.for.webview {
+   public *;
+}
+-keepclassmembers class * extends android.webkit.webViewClient {
+    public void *(android.webkit.WebView, java.lang.String, android.graphics.Bitmap);
+    public boolean *(android.webkit.WebView, java.lang.String);
+}
+-keepclassmembers class * extends android.webkit.webViewClient {
+    public void *(android.webkit.webView, jav.lang.String);
+}
+
+#okHttp
+# JSR 305 annotations are for embedding nullability information.
+-dontwarn javax.annotation.**
+
+# A resource is loaded with a relative path so the package of this class must be preserved.
+-keepnames class okhttp3.internal.publicsuffix.PublicSuffixDatabase
+
+# Animal Sniffer compileOnly dependency to ensure APIs are compatible with older versions of Java.
+-dontwarn org.codehaus.mojo.animal_sniffer.*
+
+# OkHttp platform used only on JVM and when Conscrypt dependency is available.
+-dontwarn okhttp3.internal.platform.ConscryptPlatform
+
+# glide
+-keep public class * implements com.bumptech.glide.module.GlideModule
+-keep public enum com.bumptech.glide.load.resource.bitmap.ImageHeaderParser$** {
+  **[] $VALUES;
+  public *;
+}
+
+#jnr.posix
+
+
+-dontwarn jnr.posix.**
+-keep class jnr.posix.** { *;}
+# fastjson
+
+-dontwarn com.alibaba.fastjson.**
+
+-keep class com.alibaba.fastjson.** { *; }
+#极光
+-dontoptimize
+-dontpreverify
+
+-dontwarn cn.jpush.**
+-keep class cn.jpush.** { *; }
+-keep class * extends cn.jpush.android.helpers.JPushMessageReceiver { *; }
+
+-dontwarn cn.jiguang.**
+-keep class cn.jiguang.** { *; }
+
+#==================gson && protobuf==========================
+-dontwarn com.google.**
+-keep class com.google.gson.** {*;}
+-keep class com.google.protobuf.** {*;}
+
+#jackson
+-keep class com.fasterxml.jackson.core.** {*;}
+-keep interface com.fasterxml.jackson.core { *; }
+-keep public class * extends com.fasterxml.jackson.core.**
+-keep class com.fasterxml.jackson.databind.introspect.VisibilityChecker$Std.<clinit>
+-keep class com.fasterxml.jackson.databind.ObjectMapper.<clinit>
+-keep class com.fasterxml.jackson.databind.** {*;}
+-keep class com.fasterxml.jackson.databind.introspect.VisibilityChecker$*{*;}
+-keep interface com.fasterxml.jackson.databind { *; }
+-keep public class * extends com.fasterxml.jackson.databind.**
+
+#greendao3.2.0,此是针对3.2.0，如果是之前的，可能需要更换下包名
+-keep class org.greenrobot.greendao.**{*;}
+-keepclassmembers class * extends org.greenrobot.greendao.AbstractDao {
+public static java.lang.String TABLENAME;
+}
+-keep  class net.sqlcipher.** {*;}
+-keep  class net.sqlcipher.database.** {*;}
+-keep class **$Properties
+#5.0以上sdk使用
+-keepclassmembers enum * {
+    public static **[] values();
+    public static ** valueOf(java.lang.String);
+}
+#------------------自定义view-------------------------------------#
+-keep class bd.com.appcore.ui.view.** {*;}
+-keep class bd.com.supply.widget.** {*;}
+
+#------------------数据库-------------------------------------#
+-keep class bd.com.walletdb.**{*;}
+#------------------java bean-------------------------------------#
+-keep class bd.com.supply.module.common.UpdateInfo
+-keep class bd.com.supply.module.news.domain.** {*;}
+
+-keep class bd.com.supply.module.transaction.model.domian.** {*;}
+-keep class bd.com.supply.module.push.bean.** {*;}
+-keep class bd.com.supply.module.wallet.model.domain.** {*;}
+-keep class bd.com.supply.web3.contract.** {*;}
+
+# Android SDK
+-dontwarn android.support.**
+-keep class android.support.v4.**{*;}
+-keep interface android.support.v4.**{*;}
+-keep class !android.support.v7.internal.view.menu.**,android.support.** {*;}
+-keep class android.annotation.**{*;}
+-keep class org.htmlcleaner.**{*;}
+-keep public class * extends android.app.Activity
+-keep public class * extends android.app.Application
+-keep public class * extends android.app.Service
+-keep public class * extends android.content.BroadcastReceiver
+-keep public class * extends android.content.ContentProvider
+-keep public class * extends android.app.backup.BackupAgentHelper
+-keep public class * extends android.preference.Preference
+-keep public class * extends android.support.v4.**
+-keep public class com.android.vending.licensing.ILicensingService
+-keep public class * extends android.app.Fragment
+-keep public class * extends android.app.FragmentActivity
+
+-keepclassmembers public class * implements java.io.Serializable {*;}
+-keep public class * extends android.view.View {
+    public <init>(android.content.Context);
+    public <init>(android.content.Context, android.util.AttributeSet);
+    public <init>(android.content.Context, android.util.AttributeSet, int);
+    public void set*(...);
+}
+-keepclasseswithmembers class * {
+    public <init>(android.content.Context, android.util.AttributeSet);
+}
+-keepclasseswithmembers class * {
+    public <init>(android.content.Context, android.util.AttributeSet, int);
+}
+-keepclassmembers class * extends android.content.Context {
+   public void *(android.view.View);
+   public void *(android.view.MenuItem);
+}
+-keepclassmembers class * implements android.os.Parcelable {
+    static android.os.Parcelable$Creator CREATOR;
+}
+-keepclassmembers class **.R$* {
+    public static <fields>;
+}
+ -keepclasseswithmembernames class * {
+    native <methods>;
+}
+# Preserve the special static methods that are required in all enumeration classes.
+-keepclassmembers enum * {
+    public static **[] values();
+    public static ** valueOf(java.lang.String);
+}
+-keepclassmembers class * implements java.io.Serializable {
+    static final long serialVersionUID;
+    private static final java.io.ObjectStreamField[] serialPersistentFields;
+    private void writeObject(java.io.ObjectOutputStream);
+    private void readObject(java.io.ObjectInputStream);
+    java.lang.Object writeReplace();
+    java.lang.Object readResolve();
+}
+ -keepnames class * implements android.os.Parcelable {
+     public static final ** CREATOR;
+ }
+
+ -dontshrink
+ -dontoptimize
+ -dontwarn android.webkit.WebView
+ -dontwarn com.umeng.**
+ -keep public class javax.**
+ -keep public class android.webkit.**
+ -keepattributes Exceptions,InnerClasses,Signature
+ -keepattributes *Annotation*
+ -keepattributes SourceFile,LineNumberTable
+ -keep public interface com.umeng.socialize.**
+ -keep public interface com.umeng.socialize.sensor.**
+ -keep public interface com.umeng.scrshot.**
+ -keep public class com.umeng.socialize.* {*;}
+ -keep class com.umeng.scrshot.**
+ -keep class com.umeng.socialize.sensor.**
+ -keep class com.umeng.socialize.handler.**
+ -keep class com.umeng.socialize.handler.*
+ -keep public class com.umeng.soexample.R$*{
+     public static final int *;
+ }
+ -keep public class com.umeng.soexample.R$*{
+     public static final int *;
+ }

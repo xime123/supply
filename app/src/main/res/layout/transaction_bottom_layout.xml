@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="2">
+
+    <TextView
+        android:id="@+id/translate_tv"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_weight="1"
+        android:background="#ff3471fa"
+        android:gravity="center"
+        android:text="转账"
+        android:textColor="#ffffffff"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/shouzhang_tv"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_weight="1"
+        android:background="#ff34b2fa"
+        android:gravity="center"
+        android:text="收款"
+        android:textColor="#ffffffff"
+        android:textSize="14dp" />
+</LinearLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_24"
+            android:background="@color/mine_item_background" />
+
+        <RelativeLayout
+            android:id="@+id/rl_mine_header"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/account_header_height"
+            android:background="@color/mine_item_background">
+
+            <bd.com.appcore.ui.view.CircleImageView
+                android:id="@+id/iv_mine_icon"
+                android:layout_width="@dimen/account_icon_size"
+                android:layout_height="@dimen/account_icon_size"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/account_icon_margin_left"
+                android:src="@mipmap/user_portrait_default" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/account_name_margin_left"
+                android:layout_toRightOf="@id/iv_mine_icon">
+
+                <TextView
+                    android:id="@+id/tv_mine_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="钱包名称"
+                    android:textColor="@color/account_name_text_color"
+                    android:textSize="@dimen/account_name_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_mine_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_mine_name"
+                    android:layout_marginLeft="2dp"
+                    android:text="查看并编辑个人钱包"
+                    android:textColor="@color/mine_header_edit"
+                    android:textSize="@dimen/account_header_edit" />
+            </RelativeLayout>
+
+            <TextView
+                style="@style/MineRightArrow"
+                android:layout_centerVertical="true"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_group_profile_setting"
+            style="@style/MineGroupTextStyle"
+            android:text="个人设置" />
+
+        <bd.com.supply.widget.CommonItemView
+            android:id="@+id/info_ctv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:LeftIcon="@mipmap/ic_personal_account"
+            app:isLeftIconShow="true"
+            app:textDes="我的钱包" />
+
+        <TextView
+            android:id="@+id/tv_group_setting"
+            style="@style/MineGroupTextStyle"
+            android:text="系统设置" />
+
+        <bd.com.supply.widget.CommonItemView
+            android:id="@+id/setting_ctv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:LeftIcon="@mipmap/ic_personal_setting"
+            app:isLeftIconShow="true"
+            app:textDes="设置" />
+
+        <bd.com.supply.widget.CommonItemView
+            android:id="@+id/address_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:LeftIcon="@mipmap/ic_personal_help"
+            app:isLeftIconShow="true"
+            app:textDes="地址本" />
+
+        <bd.com.supply.widget.CommonItemView
+            android:id="@+id/account_ctv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:LeftIcon="@mipmap/ic_personal_about"
+            app:isLeftIconShow="true"
+            app:textDes="钱包账号管理" />
+    </LinearLayout>
+
+</ScrollView>

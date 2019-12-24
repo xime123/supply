@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/test_ville"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_white"
+    android:orientation="vertical"
+    android:paddingBottom="0dp">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black_5"
+        />
+    <ImageView
+        android:id="@+id/tab_iv"
+        android:layout_marginTop="@dimen/gap_micro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/ic_index"
+        />
+    <TextView
+        android:id="@+id/label"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/gap_micro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="账户"
+        android:textColor="@color/color_main_tab_indicator"
+        android:textSize="10dp"
+        />
+
+</LinearLayout>

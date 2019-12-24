@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/contact_name_et"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_50"
+        android:layout_marginLeft="@dimen/gap_medium"
+        android:layout_marginRight="@dimen/gap_medium"
+        android:layout_marginTop="@dimen/gap_medium"
+        android:background="@null"
+        android:hint="名称"
+        android:textColor="@color/black_1"
+        android:textSize="14dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/gap_medium"
+        android:layout_marginRight="@dimen/gap_medium"
+        android:background="@color/divider_dark" />
+
+    <EditText
+        android:id="@+id/contact_remark_et"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_50"
+        android:layout_marginLeft="@dimen/gap_medium"
+        android:layout_marginRight="@dimen/gap_medium"
+
+        android:background="@null"
+        android:hint="备注（选填）"
+        android:textColor="@color/black_1"
+        android:textSize="14dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/gap_medium"
+        android:layout_marginRight="@dimen/gap_medium"
+        android:background="@color/divider_dark" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/gap_large"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/gap_medium"
+            android:layout_marginLeft="@dimen/gap_medium"
+            android:layout_marginTop="@dimen/gap_large"
+            android:text="ETH:"
+            android:textColor="@color/black_1" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="@dimen/gap_medium"
+            android:background="@color/divider_dark" />
+        <EditText
+            android:id="@+id/contact_address_et"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:layout_marginLeft="@dimen/gap_medium"
+            android:layout_marginRight="@dimen/gap_medium"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:hint="请输入有效地址"
+            android:textColor="@color/black_1"
+            android:textSize="10dp" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/gap_medium"
+            android:src="@mipmap/camera"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/gap_medium"
+        android:layout_marginRight="@dimen/gap_medium"
+        android:background="@color/divider_dark" />
+    <TextView
+        android:id="@+id/delete_contact_tv"
+        android:layout_marginTop="@dimen/view_100"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginRight="@dimen/gap_medium"
+        android:layout_marginLeft="@dimen/gap_medium"
+        android:background="@drawable/shape_red_gray_bg_selector"
+        android:gravity="center"
+        android:text="删除联系人"
+        android:textColor="@color/white" />
+</LinearLayout>

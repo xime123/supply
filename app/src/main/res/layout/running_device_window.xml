@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_triangle"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="-2dp"
+        android:layout_marginRight="@dimen/view_6"
+        android:background="@drawable/shape_card_view">
+
+        <bd.com.supply.widget.MaxHeightRecyclerView
+            android:id="@+id/running_dev_rv"
+            android:layout_width="236dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/view_2"
+            app:maxHeight="290dp" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_triangle"
+        android:layout_width="@dimen/view_20"
+        android:layout_height="@dimen/view_20"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/view_24"
+        android:background="@drawable/shape_triangle" />
+
+</RelativeLayout>

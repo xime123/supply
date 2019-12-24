@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:gravity="center"
+              android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginRight="@dimen/gap_super_large"
+        android:layout_marginLeft="@dimen/gap_super_large"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@mipmap/bg_card_normal"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+            <TextView
+                android:id="@+id/title_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/gap_medium"
+                android:layout_marginLeft="@dimen/gap_medium"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:paddingRight="@dimen/gap_medium"
+                style="@style/STextAppearance.Large.Black1"
+                android:text="活动内容"/>
+            <ImageView
+                android:id="@+id/cancel_iv"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/gap_small"
+                android:layout_marginRight="@dimen/gap_medium"
+                android:src="@mipmap/cancel"/>
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/private_name_tv"
+            android:layout_width="match_parent"
+            android:gravity="left|center_vertical"
+            android:layout_marginRight="@dimen/gap_medium"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/gap_medium"
+            android:textColor="@color/black_1"
+            android:text="0xsdfdsfdsfsdflksfdjglkjdflgjdklglkjdklg"
+            android:background="@drawable/shape_bg_gray"
+            android:layout_marginTop="@dimen/gap_small"
+            android:layout_marginLeft="@dimen/gap_medium"
+            android:textSize="14dp"
+            />
+
+            <TextView
+                android:id="@+id/ok_tv"
+                android:layout_centerVertical="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/gap_medium"
+                android:padding="@dimen/gap_small"
+                android:background="@drawable/shape_btn_bule"
+                android:layout_marginBottom="@dimen/gap_medium"
+                android:gravity="center"
+                style="@style/STextAppearance.Medium.White1"
+                android:layout_alignParentRight="true"
+                android:text="确定"/>
+    </LinearLayout>
+
+</ScrollView>

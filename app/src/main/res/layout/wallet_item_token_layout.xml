@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:padding="@dimen/gap_medium">
+
+        <bd.com.appcore.ui.view.CircleImageView
+            android:id="@+id/token_icon"
+            android:layout_width="@dimen/view_40"
+            android:layout_height="@dimen/view_40"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/qrcode" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/gap_medium"
+            android:layout_toRightOf="@+id/token_icon"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/token_name"
+                android:text="ETH"
+                style="@style/STextAppearance.Medium.Black1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/token_symbol"
+                android:layout_marginTop="@dimen/gap_micro"
+                android:width="@dimen/view_200"
+                android:singleLine="true"
+                android:ellipsize="middle"
+                style="@style/STextAppearance.Micro.Black2"
+                android:layout_width="wrap_content"
+                android:text="Ethereum Foundtion"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/token_address"
+                android:layout_marginTop="@dimen/gap_micro"
+                style="@style/STextAppearance.Micro.Black3"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:ellipsize="middle"
+                android:text="0x000000000000000"
+                android:singleLine="true" />
+        </LinearLayout>
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/switch_token_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/gap_small"
+            android:gravity="center"
+            />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/charging_recharge"
+        style="@style/style_charging_btn"
+        android:layout_marginBottom="@dimen/view_24"
+        android:text="消费提币"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/charging_home_bill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/view_12"
+        android:text="当前账户余额："
+        android:textColor="@color/color_black"
+        android:textSize="@dimen/view_14"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/charging_recharge"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <View
+        android:id="@+id/charging_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="120dp"
+        android:background="@drawable/bg_charging_gradient_green"
+        app:layout_constraintBottom_toTopOf="@id/charging_home_bill" />
+
+    <FrameLayout
+        android:id="@+id/layout_charging_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/view_24"
+        android:padding="@dimen/view_15"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/iv_charging_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_msg_red_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|right"
+            android:visibility="invisible" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_charging_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/view_36"
+        android:layout_marginLeft="@dimen/view_24"
+        android:layout_marginRight="@dimen/view_24"
+        android:background="@drawable/bg_corner_ffffff_6dp"
+        android:orientation="vertical"
+        android:padding="@dimen/view_16"
+        app:layout_constraintBottom_toTopOf="@id/charging_home_bill">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/category_list_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/view_12"
+                android:layout_weight="1"
+                android:drawablePadding="@dimen/view_12"
+                android:drawableTop="@mipmap/battery"
+                android:gravity="center"
+                android:text="打包"
+                android:textColor="@color/color_charging_gray"
+                android:textSize="@dimen/view_13" />
+
+            <TextView
+                android:id="@+id/product_list_tv"
+                android:layout_width="0dp"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/view_12"
+                android:layout_weight="1"
+                android:drawablePadding="@dimen/view_12"
+                android:drawableTop="@mipmap/time"
+                android:gravity="center"
+                android:text="产品列表"
+                android:textColor="@color/color_charging_gray"
+                android:textSize="@dimen/view_13" />
+
+            <TextView
+                android:id="@+id/charg_money_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/view_12"
+                android:layout_weight="1"
+                android:drawablePadding="@dimen/view_12"
+                android:drawableTop="@mipmap/icn_balance"
+                android:gravity="center"
+                android:text="消费金额"
+                android:textColor="@color/color_charging_gray"
+                android:textSize="@dimen/view_13" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:background="@drawable/shape_pile_info_divider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/account_total_kwh"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/view_12"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="--"
+                android:textColor="@color/color_charging_gray"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/account_total_time"
+                android:layout_width="0dp"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/view_12"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="--"
+                android:textColor="@color/color_charging_gray"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/account_banace"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/view_12"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="--"
+                android:textColor="@color/color_charging_gray"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <bd.com.supply.widget.RippleBackground
+        android:id="@+id/charging_ripple"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/layout_charging_bottom"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rb_color="@color/white"
+        app:rb_duration="10000"
+        app:rb_radius="70dp"
+        app:rb_rippleAmount="12"
+        app:rb_strokeWidth="@dimen/divider_1"
+        app:rb_type="strokeRipple" />
+
+    <bd.com.appcore.ui.view.CircleImageView
+        android:id="@+id/charging_scann"
+        android:layout_width="@dimen/view_200"
+        android:layout_height="@dimen/view_200"
+        android:layout_marginTop="@dimen/view_10"
+        android:scaleType="centerCrop"
+        android:src="@drawable/selector_scanner"
+        app:layout_constraintBottom_toTopOf="@id/layout_charging_bottom"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintHeight_max="257dp"
+        app:layout_constraintHeight_percent="0.4"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <bd.com.supply.widget.marqueeview.MarqueTextView
+        android:id="@+id/tv_env"
+        android:layout_width="@dimen/view_150"
+        android:layout_height="@dimen/view_50"
+        android:gravity="center"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:scrollHorizontally="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:text=""
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@id/charging_scann"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>

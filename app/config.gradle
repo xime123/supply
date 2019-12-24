@@ -1,0 +1,29 @@
+android {
+    buildTypes {
+        //演示环境
+        release {
+            //钱包初始url
+            buildConfigField 'String', 'base_url', "\"http://47.105.173.168/sctlb\""
+            //soso 初始url
+            buildConfigField 'String', 'soso_url', "\"http://sctim.cn/soso\""
+            //soso资源url
+            buildConfigField 'String', 'soso_source_url', "\"http://sctim.cn\""
+            //soso索引url
+            buildConfigField 'String', 'soso_index_url', "\"http://sctim.cn/idxserver\""
+        }
+        //验证环境
+        preview {
+            buildConfigField 'String', 'base_url', "\"http://47.105.173.168/sctlb\""
+            buildConfigField 'String', 'soso_url', "\"http://yanghe.sctim.cn/yanghe\""
+            buildConfigField 'String', 'soso_source_url', "\"http://s1.sctim.cn\""
+            buildConfigField 'String', 'soso_index_url', "\"http://sctim.cn/idxserver\""
+        }
+        //开发测试环境
+        debug {
+            buildConfigField 'String', 'base_url', "\"http://47.105.173.168/sctlb\""
+            buildConfigField 'String', 'soso_url', "\"http://sctim.cn/testsoso\""
+            buildConfigField 'String', 'soso_source_url', "\"http://sctim.cn\""
+            buildConfigField 'String', 'soso_index_url', "\"http://sctim.cn/idxserver\""
+        }
+    }
+}

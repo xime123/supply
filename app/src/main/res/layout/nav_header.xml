@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_card_normal"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="您的钱包列表："/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/gap_medium"
+        android:background="@color/divider" />
+    <LinearLayout
+        android:id="@+id/wallet_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/gap_super_super_large"
+        android:layout_weight="1"
+        android:divider="@null"
+        android:listSelector="@android:color/transparent"
+        android:orientation="vertical"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/gap_medium"
+        android:background="@color/divider" />
+
+    <TextView
+        android:id="@+id/scan_qrcode_tv"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@mipmap/camera"
+        android:drawablePadding="@dimen/gap_medium"
+        android:gravity="center_vertical"
+        android:padding="@dimen/gap_medium"
+        android:text="扫一扫" />
+
+    <TextView
+        android:id="@+id/create_wallet_tv"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@mipmap/camera"
+        android:drawablePadding="@dimen/gap_medium"
+        android:gravity="center_vertical"
+        android:padding="@dimen/gap_medium"
+        android:text="创建钱包" />
+</LinearLayout>

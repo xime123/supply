@@ -1,0 +1,1 @@
+include ':app', ':walletdb', ':appcore', ':walletmodule', ':txmodule', ':appupdate', ':jpushlib'

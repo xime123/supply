@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/soso_header_layout" />
+
+        <TextView
+            style="@style/STextAppearance.Medium.Green1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/gap_medium"
+            android:layout_marginTop="@dimen/gap_medium"
+            android:drawableLeft="@mipmap/pay_icn_success"
+            android:drawablePadding="@dimen/gap_micro"
+            android:gravity="center"
+            android:text="原料采购" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_1"
+            android:layout_marginTop="@dimen/gap_micro"
+            android:background="#0CB338" />
+
+        <TextView
+            android:id="@+id/prod_info_tv"
+            style="@style/STextAppearance.Medium.Black2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/gap_super_super_large"
+            android:layout_marginTop="@dimen/gap_medium"
+            android:text="暂未查询到数据" />
+
+        <TextView
+            style="@style/STextAppearance.Medium.Green1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/gap_medium"
+            android:layout_marginTop="@dimen/gap_medium"
+            android:drawableLeft="@mipmap/pay_icn_success"
+            android:drawablePadding="@dimen/gap_micro"
+            android:gravity="center"
+            android:text="基地收货档案" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_1"
+            android:layout_marginTop="@dimen/gap_micro"
+            android:background="#0CB338" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/gap_super_super_large"
+            android:layout_marginTop="@dimen/gap_medium">
+
+            <TextView
+                style="@style/STextAppearance.Large.Black1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="种植户:" />
+
+            <TextView
+                style="@style/STextAppearance.Large.Black3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="广东惠州基地" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/gap_super_super_large"
+            android:layout_marginTop="@dimen/gap_small">
+
+            <TextView
+                style="@style/STextAppearance.Large.Black1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="联系人:" />
+
+            <TextView
+                style="@style/STextAppearance.Large.Black3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="张*" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/gap_super_super_large"
+            android:layout_marginTop="@dimen/gap_small">
+
+            <TextView
+                style="@style/STextAppearance.Large.Black1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="手机号:" />
+
+            <TextView
+                style="@style/STextAppearance.Large.Black3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="13922****78" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/gap_super_super_large"
+            android:layout_marginTop="@dimen/gap_small">
+
+            <TextView
+                style="@style/STextAppearance.Large.Black1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="证件号:" />
+
+            <TextView
+                style="@style/STextAppearance.Large.Black3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="362329********9898" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/gap_super_super_large"
+            android:layout_marginTop="@dimen/gap_small">
+
+            <TextView
+                style="@style/STextAppearance.Large.Black1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="基地监测报告:" />
+
+            <TextView
+                style="@style/STextAppearance.Large.Black3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="暂无" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/STextAppearance.Medium.Green1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/gap_medium"
+            android:layout_marginTop="@dimen/gap_medium"
+            android:drawableLeft="@mipmap/pay_icn_success"
+            android:drawablePadding="@dimen/gap_micro"
+            android:gravity="center"
+            android:text="销售平台" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_1"
+            android:layout_marginTop="@dimen/gap_micro"
+            android:background="#0CB338" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/gap_super_super_large"
+            android:layout_marginTop="@dimen/gap_medium">
+
+            <TextView
+                style="@style/STextAppearance.Large.Black1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="企业名称:" />
+
+            <TextView
+                style="@style/STextAppearance.Large.Black3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="深圳市吉荣农业有限公司" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/gap_super_super_large"
+            android:layout_marginTop="@dimen/gap_small">
+
+            <TextView
+                style="@style/STextAppearance.Large.Black1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="联系人:" />
+
+            <TextView
+                style="@style/STextAppearance.Large.Black3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="张*" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/gap_super_super_large"
+            android:layout_marginTop="@dimen/gap_small">
+
+            <TextView
+                style="@style/STextAppearance.Large.Black1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="手机号:" />
+
+            <TextView
+                style="@style/STextAppearance.Large.Black3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="13922****78" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/gap_super_super_large"
+            android:layout_marginTop="@dimen/gap_small">
+
+            <TextView
+                style="@style/STextAppearance.Large.Black1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="证件号:" />
+
+            <TextView
+                style="@style/STextAppearance.Large.Black3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="362329********9898" />
+        </LinearLayout>
+
+
+        <TextView
+            style="@style/STextAppearance.Medium.Green1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/gap_medium"
+            android:layout_marginTop="@dimen/gap_medium"
+            android:drawableLeft="@mipmap/pay_icn_success"
+            android:drawablePadding="@dimen/gap_micro"
+            android:gravity="center"
+            android:text="加工企业档案" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_1"
+            android:layout_marginTop="@dimen/gap_micro"
+            android:background="#0CB338" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/gap_super_super_large"
+            android:layout_marginTop="@dimen/gap_medium">
+
+            <TextView
+                style="@style/STextAppearance.Large.Black1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="种植户:" />
+
+            <TextView
+                style="@style/STextAppearance.Large.Black3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="广东惠州基地" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/gap_super_super_large"
+            android:layout_marginTop="@dimen/gap_small">
+
+            <TextView
+                style="@style/STextAppearance.Large.Black1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="联系人:" />
+
+            <TextView
+                style="@style/STextAppearance.Large.Black3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="张*" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/gap_super_super_large"
+            android:layout_marginTop="@dimen/gap_small">
+
+            <TextView
+                style="@style/STextAppearance.Large.Black1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="手机号:" />
+
+            <TextView
+                style="@style/STextAppearance.Large.Black3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="13922****78" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/gap_super_super_large"
+            android:layout_marginTop="@dimen/gap_small">
+
+            <TextView
+                style="@style/STextAppearance.Large.Black1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="证件号:" />
+
+            <TextView
+                style="@style/STextAppearance.Large.Black3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="362329********9898" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/gap_super_super_large"
+            android:layout_marginTop="@dimen/gap_small">
+
+            <TextView
+                style="@style/STextAppearance.Large.Black1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="加工时间:" />
+
+            <TextView
+                style="@style/STextAppearance.Large.Black3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2018年12月23日" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/gap_super_super_large"
+            android:layout_marginTop="@dimen/gap_small">
+
+            <TextView
+                style="@style/STextAppearance.Large.Black1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="监测时间:" />
+
+            <TextView
+                style="@style/STextAppearance.Large.Black3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2018年12月24日" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
