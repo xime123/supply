@@ -137,7 +137,7 @@ public class WalletFragment extends BaseListFragment<WalletPresenter, IWalletVie
             }
         });
 
-        actionBar.setTitle("钱包");
+        actionBar.setTitle("金融");
 
         coinIcon = header.findViewById(R.id.user_center_head_iv);
         return this;
@@ -349,7 +349,7 @@ public class WalletFragment extends BaseListFragment<WalletPresenter, IWalletVie
     @Override
     public void isCurrentWalletBacked(WalletEntity entity) {
         if (entity != null && !AppSettings.getAppSettings().getWalletIsBacked(entity.getAddress())) {
-            showNoticeDialog();
+           // showNoticeDialog();
         }
     }
 

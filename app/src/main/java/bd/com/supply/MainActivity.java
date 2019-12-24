@@ -100,7 +100,7 @@ public class MainActivity extends BaseCoreActivity implements TabHost.OnTabChang
         String title = intent.getStringExtra(IntentKey.MESSAGE_TITLE);
         String content = intent.getStringExtra(IntentKey.MESSAGE_CONTENT);
         if (!TextUtils.isEmpty(title) && !TextUtils.isEmpty(content)) {
-           // this.showMessageDialog(title, content);
+            this.showMessageDialog(title, content);
         }
     }
 
@@ -112,7 +112,7 @@ public class MainActivity extends BaseCoreActivity implements TabHost.OnTabChang
         TabWidget tabWidget = (TabWidget) findViewById(android.R.id.tabs);
         tabWidget.setDividerDrawable(null);
         //首页
-        mTabHost.addTab(mTabHost.newTabSpec(TAG_HOME).setIndicator(getIndicatorView(R.drawable.ic_index, "钱包")), WalletFragment.class, null);
+        mTabHost.addTab(mTabHost.newTabSpec(TAG_HOME).setIndicator(getIndicatorView(R.drawable.ic_index, "金融")), WalletFragment.class, null);
         //溯源
      //   mTabHost.addTab(mTabHost.newTabSpec(TAG_APP).setIndicator(getIndicatorView(R.drawable.ic_finance, "溯源")), TraceFragment.class, null);
 
@@ -179,7 +179,7 @@ public class MainActivity extends BaseCoreActivity implements TabHost.OnTabChang
         String content = intent.getStringExtra(IntentKey.MESSAGE_CONTENT);
         if (!TextUtils.isEmpty(title) && !TextUtils.isEmpty(content)) {
             //备份提醒
-           // this.showMessageDialog(title, content);
+            this.showMessageDialog(title, content);
         }
         //检查版本更新
         //mPresenter.checkUpdate(this);
